@@ -1,0 +1,146 @@
+*{
+    text-decoration: none!important;
+}
+body{
+    background-color: #4b5055;
+}
+#logo{
+    animation-name: slidein;
+    animation-duration: 2.5s; 
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running; 
+    
+}
+
+.listItems:hover{
+    background-color: #fff!important;
+    color: #2e2e2e!important;
+}
+.footerLinks{
+    width: 50%;
+    border-bottom: 1px solid #fff;
+    transition: all ease .4s;
+}
+.footerListGroup3::after{
+    content: "In";
+    color:#fff;
+}
+
+.footerListGroup{
+    transition: all ease .4s;
+    background: none;
+}
+
+.footerListGroup{
+    color: #61DAFB;
+    letter-spacing: 1px;
+    border: none;
+    padding-left: 1em;
+}
+
+.list-group{
+    border-radius: 0!important;
+}
+
+.footerLinks:hover {
+    animation-name: borderAnimate;
+    animation-duration: 2.5s; 
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-play-state: running; 
+    border-bottom: 1px solid #61DAFB;
+}
+.footerLinks:hover .footerListGroup{
+    animation-name: colorAnimate;
+    animation-duration: 2.5s; 
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-play-state: running; 
+    color: #fff;
+}
+.imgSlide{
+    min-width: 1080px;
+    min-height: 500px;
+}
+.imgSpanTags{
+    height:30px!important;
+    width:50px!important;
+    transition: all  ease .4s;
+}
+.imgSpanTags:hover{
+    cursor: pointer;
+    background-color: #ffffff!important;
+}
+#a1{
+    animation: slidein 3s linear infinite;
+    animation-direction: reverse; 
+    border-right: .2em dashed #00566e!important;
+    width: 160px;
+    height: 160px;
+}
+#a2{
+    animation: slidein 3s linear infinite;
+    border-left: .2em dashed #c59100!important;
+    width: 200px;
+    height: 200px;
+}
+#a3{
+    animation-direction: reverse; 
+    border-bottom: .5em dotted #61DAFB!important;
+    height: 250px;
+    animation: wChanger 5s linear infinite;
+}
+.around{
+    position: absolute;
+}
+@keyframes wChanger {
+    
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 200px;
+    }
+    100% {
+        width: 0;
+    }
+
+  }
+@keyframes slidein {
+    
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+
+
+@keyframes colorAnimate {
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: #c59100;
+    }
+    100%{
+        color: #fff;
+    }
+}
+
+@keyframes borderAnimate {
+    0%{
+        border-bottom: 1px solid #61DAFB;
+    }
+    50%{
+        border-bottom: 1px solid #c59100;
+    }
+    100%{
+        border-bottom: 1px solid #61DAFB;
+    }
+}
